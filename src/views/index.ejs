@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <h1 align='center'>
+            Welcome aboard <%=name%>
+        </h1>
+        <p>
+            <a href="/">Home</a>
+        </p>
+        <p>
+            <a href="session">Sessions</a>
+        </p>
+        <p>
+            <a href="session/7">Default Sessions</a>
+        </p>
+        <p>
+            <a href="admin">Admin</a>
+        </p>
+
+        <p>
+            <a href="/auth/signin">Sign In</a>
+        </p>
+
+        <form name="signup" action="/auth/signup" method="POST">
+            username: <input type="text" name="username" id="username"/><br/>
+            password: <input type="password" name="password" id="password"/><br/>
+            <input type="submit" value="Register"></input>
+        </form>
+        
+    </body>
+</html>
